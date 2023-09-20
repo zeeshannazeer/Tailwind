@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg1{
+    background-image: url('BG1.png');
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+}
+
+
+.bg{
+    background-image: url('Group\ 18.png');
+    height: 487px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+    
+
+   
+}
+.Adviser{
+    background-image: url('Group\ 21.png');
+    height: 100%;
+    width: 550px;
+    background-repeat: no-repeat;
+}
+.Group{
+    background-image: url('Group\ 22.png');
+    height:100%;
+    width: 550px;
+    background-repeat: no-repeat;
+}
+.call{
+    background-image: url('Group\ 26.png');
+   /* height: 536px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid #a969b7;
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwindcss</title>
+  <link rel="stylesheet" href="./input.css">
+  <link rel="stylesheet" href="./dist/output.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Shavian&family=Permanent+Marker&family=Poppins:ital,wght@0,900;1,100;1,200;1,300;1,400;1,800;1,900&family=Roboto:ital,wght@1,300&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Shavian&family=Permanent+Marker&family=Poppins:ital,wght@0,900;1,100;1,300;1,400;1,800;1,900&family=Roboto:ital,wght@1,300&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg1">
+    <div class="  max-w-[360px] px-3 sm:max-w-[640px] md:max-w-[740px] lg:max-w-[900px] xl:max-w-[1100px] mx-auto ">
+      <div class="flex justify-between md:justify-between sm:justify-between  xl:justify-between lg:justify-between   ">
+        <div class="pt-4 cursor-pointer w-4 h-4 sm:w-8 sm:h-8 md:w-14 md:h-12 xl:w-14 xl:h-18 lg:w-16 lg:h-14 ">
+          <svg class=" " viewBox="0 0 76 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M48.4693 0.766998L48.2897 1.02488L23.454 36.7321L48.64 73.8572L48.7048 73.9533L48.7272 73.9861L75.8064 73.8572L56.2789 45.9958L49.2437 35.9586L56.2789 26.0615L74.2591 0.766998L48.4693 0.766998Z"
+              fill="#315864" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.453995 1.025V73.8574H37.5004L12.3144 36.7322L37.1501 1.025L0.453995 1.025Z" fill="#315864" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M48.7048 73.9532L48.64 73.8569L23.4544 36.7319L48.2899 1.0253L48.469 0.766998H74.2594L56.2792 26.0615L49.2439 35.9588L56.2792 45.9956L75.8065 73.8569L48.7273 73.9856L48.7048 73.9532ZM0.453995 73.8569V1.0244H37.1497L12.3142 36.7319L37.5007 73.8569H0.453995Z"
+              fill="#A969B7" />
+          </svg>
+        </div>
+        <div
+          class=" hidden   text-[#515152] sm:flex gap-6  md:gap-4 md:text-[14px] lg:text-[14px] xl:text-[14px] pt-6 cursor-pointer sm:text-[11px] sm:gap-2 ">
+
+          <p class=" font-family: 'Poppins', sans-serif;">ABOUT KARL</p>
+          <p class=" font-family: 'Poppins', sans-serif;">ABOUT YOU</p>
+          <p class=" font-family: 'Poppins', sans-serif;">PROJECTS</p>
+          <p class=" font-family: 'Poppins', sans-serif;">PROGRAMS</p>
+          <p class=" font-family: 'Poppins', sans-serif;">NEWSLETTTER</p>
+          <p class=" font-family: 'Poppins', sans-serif;">CONTACT</p>
+        </div>
+        <div class=" pt-3 flex justify-end xl:hidden lg:hidden md:hidden sm:hidden">
+
+          <div class="">
+            <button id="mobile-menu-button" class="text-[#515152] cursor-pointer focus:outline-none"
+              onclick="toggleMobileMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+          </div>
+
+
+          <div id="mobile-menu" class="hidden sm:hidden">
+            <div class="text-[#515152] flex flex-col gap-2 sm:gap-4 sm:text-[14px] pt-6">
+              <p class="font-family: 'Poppins', sans-serif;">ABOUT KARL</p>
+              <p class="font-family: 'Poppins', sans-serif;">ABOUT YOU</p>
+              <p class="font-family: 'Poppins', sans-serif;">PROJECTS</p>
+              <p class="font-family: 'Poppins', sans-serif;">PROGRAMS</p>
+              <p class="font-family: 'Poppins', sans-serif;">NEWSLETTER</p>
+              <p class="font-family: 'Poppins', sans-serif;">CONTACT</p>
+            </div>
+          </div>
+
+          <script>
+            // JavaScript function to toggle the mobile menu
+            function toggleMobileMenu() {
+              var mobileMenu = document.getElementById("mobile-menu");
+              mobileMenu.classList.toggle("hidden");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="  px-3 max-w-[360px] sm:max-w-[640px] md:max-w-[740px] lg:max-w-[900px] xl:max-w-[1100px] mx-auto">
+      <div class="flex    ">
+        <div>
+          <div
+            class="text-[#FFFFFF]  font-family: 'Poppins', sans-serif; font-siz; xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-2xl font-semibold">
+            <p class="whitespace-pre-line pt-10 ">
+              Your Awesome Bold
+              Compelling Headline
+              Goes Right Here!</p>
+          </div>
+          <div class="text-[#CCCCCC]  pt-4 font-family: 'Poppins', sans-serif; font-siz; xl:text-2xl 
+          lg:text-[21px]  sm:text-[15px] text-[10px]
+           font-normal z-30">
+            <p class="whitespace-pre-line text-left">Your Enticing Sub-headline Copy Goes
+              Right In Here! Keep the same length.</p>
+          </div>
+          <div class=" pt-4">
+            <button class="bg-[#a969b7] md:text-[16px]  md:px-8 sm:text-[12px]  sm:px-5 text-[9px] px-4
+           text-white  lg:font-medium xl:font-semibold py-2  xl:px-10 lg:px-7  rounded-full">
+              WORK WITH KARL
+            </button>
+          </div>
+        </div>
+        <!-- <div class="max-w-fit absolute right-[0]  mt-[-70px] ml-[-20px]">
+          <img src="Karl-Krummenacher_03847-rt.png" alt="" class="  w-[1000px] h-[680px] xl:ml-[0px] lg:ml-[100px]">
+        </div> -->
+      </div>
+    </div>
+    <div
+      class="  flex-col justify-center items-center   max-w-[300px] sm:max-w-[640px]   md:max-w-[740px] lg:max-w-[900px] xl:max-w-[1100px] mx-auto  ">
+      <div class=" text-[#464748] text-center sm:pt-[80px]  sm:text-xs pt-24 text-[10px]">
+        <p>KARL HAS BEEN FEATURED IN:</p>
+      </div>
+      <div class="flex justify-center pt-[20px] w-[240px] sm:w-[400px] sm:justify-center sm:flex mx-auto ">
+        <svg width="733" height="28" viewBox="0 0 733 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g opacity="0.34902">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M323 3H439V32H323V3Z" fill="url(#pattern0)" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M469 3H555V33H469V3Z" fill="url(#pattern1)" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5H203V32H0V5Z" fill="url(#pattern2)" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M232 0H294V35H232V0Z" fill="url(#pattern3)" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M583 3H733V32H583V3Z" fill="url(#pattern4)" />
+          </g>
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_0_252" transform="scale(0.00666667 0.0263158)" />
+            </pattern>
+            <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image1_0_252" transform="scale(0.00900901 0.025641)" />
+            </pattern>
+            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image2_0_252" transform="scale(0.00380228 0.0285714)" />
+            </pattern>
+            <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image3_0_252" transform="scale(0.0123457 0.0217391)" />
+            </pattern>
+            <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image4_0_252" transform="scale(0.00515464 0.0263158)" />
+            </pattern>
+            <image id="image0_0_252" width="150" height="38"
+              xlink:href="data:image/png;base64,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" />
+            <image id="image1_0_252" width="111" height="39"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAAnCAYAAAABzhZhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFeUlEQVR4nO2bXWwUVRTHf7tQKPYDEIFqK6A8+KAUG8VPIGqiqVZI1AdBiC88EPWBaGIIajRRTEw0iiEQnzQGo0IiUaNF1GikGjRFMNEa0Ur8qBBpAcuXFmuPD2eGjtPZnXvv7A5Ouv9kMu3dc/7nzJ4795z7sTkReRA4n/JjPfBDCnZGDXIi0g/Up2DrVuDdFOyMGuSB7pRsnUjJzqhB/kw7UIE7KsHLMCrByzAqwcsw8qQXwFxKdkYN8kBjSraqU7IzapATkVZgcqj9OWB6At71wM6gHeBDYA6wIgHvLuDZIp+fA1wANAC1nt0/gT7gZ+CXBLaLoc6z2wRMRefNfmc9Chz07H8PHC+ZVRGJur6VZJhfgHdNQt5dEZyTROR+EdkhIidj9LtE5GkRaS7gn83VIiKPishHInLY0P9DItIuIveKyNlJfSj0QbehM4WwpADvyoS8W0N8q0Skz5Fro4jkC/hZ7FomIp+4PkAA/SLylIjUO/iAiGSu2hzn3auAd4B1wBRHrnuA3Zjn4muBL4BXgIWONoOoB1YDe4FbXAiyFry93r0TaCsB31zgfQO5h4FPgStKYDOMBnTNd6WtYtaCNw3t+XNLyLkAWFLk8xeAtSW0V8zO7TYKWQvecmBZGXjXFGhfi8MbkQBvYJEGxpbRkSi45qdyoxkt83sCbTegw6UtPgM+Rqcnk9F8Ns9CfwPFR4LTyIlIVHs3MNvCYBhLgdcj2hcAdwX+bwVmJbBzAC0ijqHz0usYLmps0QpsD3E3WHLcDWyKaH8CeMSCpxHYHytVoAwt11QhfG1KYGOViIwP8TWJTidcsDTAs9xB/0kp/qydFlwPxXD9L6YKdY56bcDzwECovQdN+j86cAbXXu+z1P0beDxGZp0F380mQmc6eC54DWiPkXnZgdfPH9OAqyx1OxnZkcLYGfN5EPOBmjihtAuWUmCDgczhBPyXOeh8YyBTLIedAnrRNdAeT7YqjjCLwfvJQMa1aAG40EHnkIHMAPAiMAT8ihZE+9FgHfA4/rExmsXgjTGQcdk79IfNqQ66pwzlkuyojEAWc165fY4driIQOd9ykLFCFoNXbhx10DEZDUqOSvCG4Q+1vznoxlaG5UAWc165YVI5hjHDUO4mtCASoodRQTtRDt3yKtqRCgXPquqJwDFDOdNEH8QRAxmX09m+z1+hFe0sC92rDeVeAs4zlL2c4eBVoYEdDArk0bMeE0OXS9IOYnoEZw7tLMG2sxy4ZwT0/d9YjAnxuiyANwR82mGp2whcGSNTi3kl2wt8iS6Ov4dOJ3rQt/F6XygnIh2M3B+rIVk+/AtdMjptB5gJXIJuPPpDxgTsh+4T6FwJoB/9hVML+oX7vOOA8Za8AwGfv/Y4bU68daHPVwhvAYsNuVajz1NoVeZOYEseOBddYwxeSQuZ6hBfrcdZ7f3tt7vk3JqAfpPXNi7Eaxs4PJ1a7/oA++2gi4E9wCL0DfZ9vdHjMw3cELAP2FZEZjPQMBbtvWlA+O/bWAr84d0Hiwk5oBZ4DHgAu3OtlwJvo/nzCNqRwscq4/AMGvxJMXIrKlOFaMz07gvRc5+2qENzs23gQN/4ZgO5iyrBi4ZfBe9Dd8EPpmR3ETqKmGwC91eCF48uNJ+9WUYbQ8AdaDUJZltaW/KkO1Ev9Y9NfN9LzRte7uoDbkPPluwusa3taOfYGmhrp/ie5atAR570DgXlSbZVE4Va7550XhrGxALtm9H9vsXoGZ1eR/7jaLDa0LMz30XItKFbSEEIsBHvBF1ORObhfhzBBh3ol91SQs5BdD5Uh90JrTj8jg6XcZgAXIMGdA66KjMFfc4qz7+TaFXcgy697fF8Nt0wno0e9h0CPkd/sALAv2gvfLz18cjfAAAAAElFTkSuQmCC" />
+            <image id="image2_0_252" width="263" height="35"
+              xlink:href="data:image/png;base64,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" />
+            <image id="image3_0_252" width="81" height="46"
+              xlink:href="data:image/png;base64,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" />
+            <image id="image4_0_252" width="194" height="38"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAAmCAYAAACWNESlAAAACXBIWXMAAAsTAAALEwEAmpwYAAALtUlEQVR4nO2ceZBXxRHHP4u7LCCRJSqgCEoUL8TggRrFYEw0paKJZ4xGKmrUSpVljFfFxHhE0cTEpNTEipbExNscFY94oOJFETWooK4XCgoicqkggsr1zR/9njs7r99vf/s7FhPet+rV/qanp6ffzPS8mZ6ebZB0E/AtqsPZwLVVyihQYK2hEdgP+EKVcrrVQJcCBdYaGoFxwEhgS2BPh+cPwHvAekl6FXAAsFvAs7COOhYoUHc0Alcnv5uBTxyeUx3aUtobwvIa61WgQJciXNJ8MYdniENbP0ovrok2+egBDAJ2BQbUua4C6yBCQ2jqRLnGKD2/BrrkYUPgLWAWMAX4Th3rKrCOIh7Q5aIVeAXbN6ykvoZwENA/SK+oY10F1lFUagh/TZ6uwIgovaCL6i2wDqFSQ+gIPYEdgK2TOv6S0EcAY4DR2Lp/FnAvcFtUfiCwHdALODzK2xH7GjUDq4EXASV5jdheYhgwGHgIeD3J2wT4KrBFkr4G2/SHaAaOBfYBhmJLxxnAhOAdQvRO6hoCbJrodjvwANAAnAB8PdFpGfAocBMw15EF0B3z3m2byLsV+CDJG4p594Ykel9H1rnRFzgm0X8wsAZ4DfgncFeJOocC22BtdA3WngOwZei+idxFwERgvFOvh5HAIcDeWDstByZhfd0a8TYB/RId+gMbJ+3wHO3bvTvWLkMT/o2T31OB6x0d+mLjcCjm2bwnyNsXa+d+wKNISp/B8jEk4OnouUFSq6RFkYz1JZ2VI1+SnpDUO5AzrgRviDmSGiSdIuk5SXOj/DMlbSHpTkmfRHnnRLofKGl2ibpelLR5wH+2pKUO3yWSWiS9kiNnmaRDorovk/S8pPkR7wGShkt6zJHz/UjGyZLeL6H/BEl9Av4fSZomaV7Et11S70c5ct6UtI3yx0CTpD+X0EOSLojKvJXDNy/g2ayEvOkB3whJkyW9Eb3DIlm/nJO8Q4gFnTGE/pKulA3SneQ3goePJb1W4iVSTA7k3FAGvyS9nPA/mZM/R9KanLyxQX3HOfkfSlod0ebLGhNJ43PkPivp9XyVP8OwoP7lOTyzSpQ/Nih/vpO/2KG9EJR5xslfo3wDDvGe2k9c4TO1TF0uDcrkvecSSc3q2BBmB7KOyeH5VNLCnLyp5RhCmj86oJ0lvxFOlPQr5Q/8lyU9JX8mlaSdEzm7J3U85PC8JOmKJH/vhH9/2Uw8LUfu5KRciN2Tsls6/OfJZs/ByhrZw0m5LSQdJumqnDpvlBnbWEn/cvIfV1u7HSVrtxk5sp6QtCCiba9sv6Q4XjZQvyybGUNcrrY2u1jWHx7myt59Zk7+ucr2/80RT6usT3tLOsmRsUNSrrtson00yl8oqUcgv1nSQGWNeEbAM0jWfzdIWunUOV/SREmrAtpd5RjCd2WNfW1AO0G+IaTPuY6cC4P8AbLZKcYvIjl7OjzfK1Gv19jnJ3mnRPTBCT0epK9GMluU/aqMCPKHOXXe5+g20eHbLOK5zOE5NMm7K6AtDsrEs+mdkcxtHZl9g/wxTv7daj8Ab3V4wi84sgEfY/+I5+oo/54o/8Yof4Havgjhc3fE94bDg7JL9NbgvUKMLydG6FbgMeDkMnhTeLFLlwS/5wHnOTzxYdkmDk+fEvW2OLRnk789I/psbDN1UES/JUovBv4e0U4Lfm/u1HmfQ/uJQzssSnvt9lTy96OA1pz8/Qq2KQ7xpyj9KjA9oh0b/N7IqfM82m+If0jWbR0fwP48Si8CHoxo4zAHR4ox2DlRivigNg+9yuDpQTYGbib2XrGTaGW9vEaegfUH3gnScxyeVVG6oUzZpfLSjp4A/A4ziNRbdJzD/4hDux84MkjvW0IHMAOLMQWL2Qo7freIx3vfgcC7mDdnITYIUk+YF/7ylEO7F/PgpTgY+H3y22uzlii9BDsrGhTQwr7qQzaCeZojdx6m+7YBbT/M01ZreO+VGtoq4HTMM9ULuKMjQ1gD7IG5+07Fn9XKxXpRWg6PR6sVXgHOiGhe+PkshxYb7QBgA+DDnLq8AQ02EYSG4BlMjLRNJidPiFFRegF+AOQLUXprhyeENy5WR+mwr4aTfWevHQHepL0h7EF9DKEjXBkmylkaTcU6MPzcl9OBHSE2jLWBOI7qPfwv1UtRuhl/2dYRPorS/SqQkaKF7FJyFv5k8k6U7kt2qVgKDZQeKyMdWtxmKeIohGraoGYoZ2mULmmmAWdiA3hCHXXqKjRhBz0x7Ursc9kz+dsLm/1jVDIZxOtsT265GIIdMIUYhEUT98LWyKn+m0Z8fTBDnllF/SHifQrAEcBWgQ6pTsMjPm+P0uXozB5hKfDbeimyFtBE9v03oP1GuBQ+6JglgzUVlMmDt7EcgL9v8JC3rKsE3tdiT/z7LTHifeFaQb02y/8LWIEFDIZYhW2MU4/Jamzwho+wPdNrNdKhUsThISntQdr0jHVP6c9hXp1aId4/gHmqnk9+e3qkk8I1NdSjYqzLhrAKi/8JsQaLj6kX4vZeXIWsmcCntLlSwbxLR1Qhs1J4G+PbgQu6WpFKUeld4+2BZ4AnsTOGo2ulUBcj9q93p72LsNaI/d/VzMpLyQbvDWTtOCGmOLQv1UCuqK8n8TNUagjDgF0w19doYK+aadS1eMChfa2O9cWHUJ6HqjN4IkqvTzZsvSswjWxE6u4VyInHYwNddP+kUkOIT0DjtXat4M1un9ZQ/t8c2jk1lB+iL7BZRHu4SpnjHdq5VcqsBMvJnr4PpfpJpYWsZw+yS9qqERrC7Bye2AcNWbddS5T+2Cnjbe5ixOU8j0KpfY1Xr0dL8Q7ZewbDgCtKlCnn/MC7PDSK9u22jOwXyTPy+OwhxCRs4xvicOCUHP5Gsm5fb1CVM9DivrnY4bkdc6F6aCE70cWHgU2Yyz5EI3bvI4S3WV9OdlmVO2GnF1l2dYSn+CZ2CJKeHK7GYlxCtERpzz/em45djrEcbxP2Y+xix3TMkBfS9oJerE5HB0enA2NpfzJ6BmYQt2BhARtgF3p+gLXXIEq/y9FYm03HOnNHsjP1b8gOfC+GpqP4m6OANyLaH7HZ+B+Jnhtip7knYhPSDrQNEi92y5uFYzRjbZbKmQ5cRPsNcj/sYO2X2D5iJbaPGYXFWV0OXBrw3wacFNVzIdavU7C2OI22y1UpmiJdwNoyXvH0yH0bSdc7UYOdxUS1xYK3KnsJRpLelnRvEP23q8OzWnZJI40YbVT2skqKNMS2u6R+kv4j/zLJIlk48W7Kj1rdp9TLOTggKHtgJ8tKFvPfFMg4UhbH77XbXEkPysKU8/Q/sZP195C0o+zuxIdO/kJJT0samchvkPVfjDmycOdQl/s7oUcYip4+k8oot1rZiOA5ku5IZFyVo+8qWTj+ZXG9yG4uVYu3EoGPlMHbM+EdVYLn32pTcqTyb0tJZizlDMbjlD+QkN0E80KlQzwu6SC1D1GO6867CJTiNmUvtdxXhv7DO9D/G8q/j5Hibkl7yQb2RWXUebTaDCEPSxxdfqbSffa+pF+rLRQ+fHrLv7+RYpzshlwe4hBrDyviehskjcY2NpW6qRqwZcA92DJqOP4JagPmN083eBsB304/TBFfK+2jKDfF7s/ug322F2Fr4xexdfZQLKIy7+S2AbiZ8v7bxv7Yiege2NJxNha09jTmLo5xIBbdmULAT7El28HYsuSTpOzDZD09YMuYXXL0b8CWo9dR3j9SOzzRfackPQM72Hqc9vE/O2NRtKVOu29K3qMBa//eZPtqFnY3PEb/RJeR2FJyBdaOz2Nxa0s6eI/9Ev3SOKansb6elKSPT/RJ9e+GLRHvx5aALfhjuhsWgBn2GQ1Sl7hp/58RGwLAocCdXa9KgUpR/PPe+uBzEUhWoHwUhlCgAIUhFCgAFIZQoABQGEIt8LZDe7fLtShQFQpDqA5bYSe7McZgp7ed+Q/jBdYiCvdp5fDcpjHGYr74Ap9zrMsXc6pFGte0jOyhVDcsxqlUwF+BzxH+C/8kHudqq539AAAAAElFTkSuQmCC" />
+          </defs>
+        </svg>
+      </div>
+      <div>
+        <div class="flex justify-center sm:mx-auto">
+          <img src="chevron-pointing-to-the-left copy.png" alt="Image description" class="pt-[20px] mb-[30px]  w-4">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="  flex-col  flex sm:flex-row sm:justify-center  sm:pt-20 pt-10  pb-16 md:gap-0 sm:gap-10 xl:gap-16">
+    <div class="flex justify-center items-center">
+      <img src="Group 17 (1).png" alt="IMAGE NOT SET"
+        class="  w-[255px]  sm:w-[230px] md:w-[280px] xl:w-[330px] lg:w-[330px] ">
+    </div>
+
+    <div class=" max-sm:flex  max-sm:flex-col  max-sm:items-center  sm:ml-2 md:ml-5 lg:ml-8 xl:ml-10">
+      <h1
+        class=" font-family: 'Poppins', sans-serif; font-siz; font-semibold min-[300px]:text-2xl max-[400px]:text-2xl min-[520px]:text-4xl max-[640px]:text-4xl min-[400px]:text-4xl max-[520px]:text-4xl   sm:text-[20px] sm:leading-none  md:text-2xl lg:text-4xl xl:text-4xl     pt-9 ">
+        The Problem You <br> Solve
+        and Solution <br> You Provide.</h1>
+      <p
+        class="font-family: 'Poppins', sans-serif; font-siz; font-semibold  sm:text-[6px]  md:text-[7.3px] lg:text-[10px] xl:text-[11px] text-[#777777] pt-4   min-[300px]:text-[7.3px] max-[400px]:text-[7.3px] min-[520px]:text-[10px]  max-[640px]:text-[10px]  min-[400px]:text-[10px]  max-[520px]:text-[10px]  ">
+        Talk about
+        the
+        problem of your target audience that you <br> help solving with your service or product. Please keep the <br>
+        length of the paragraph about this long to keep the design <br> layout clean and balanced.</p>
+      <p
+        class="font-family: 'Poppins', sans-serif; font-siz; font-semibold  min-[300px]:text-[7px] max-[400px]:text-[7px]  text-[10px] sm:text-[6px] md:text-[7.3px] lg:text-[10px] xl:text-[11px] text-[#777777] pt-4 min-[520px]:text-[10px]  max-[640px]:text-[10px]  min-[400px]:text-[10px]  max-[520px]:text-[10px] ">
+        Briefly
+        explain the solution that you provide with your product <br> or service and how it works. Also include the
+        desired benefits <br> or outcome. Please keep the length of the paragraph about<br> this long to keep the layout
+        clean and balanced.</p>
+      <div class="max-sm:ml-[-120px]">
+        <button
+          class="bg-[#a969b7]     xl:py-2  xl:px-6    lg:py-2  lg:px-6  md:py-1  md:px-4 sm:py-1  sm:px-2  py-1 px-2  
+    text-white font-medium text-[7px]  sm:text-[7px] xl:text-[10px] lg:text-[10px]  md:text-[8px]  xl:font-bold  sm:font-medium md:font-semibold lg:font-semibold  rounded-full mt-4">
+          WORK WITH KARL
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <div
+    class="bg  sm:bg-w-[1240px] md:bg-w-[1240px] lg:bg-w-[1240px] xl:bg-w-[1240px]sm:bg-w-[1240px] md:bg-w-[1240px] lg:bg-w-[1240px] xl:bg-w-[1240px] max-sm:h-full">
+    <div class=" flex-col  flex  items-center   sm:flex-row sm:justify-center gap-8 ">
+      <div class=" flex-col   pb-[130px] ml-6">
+        <h1 class="font-family: 'Poppins', sans-serif; font-siz; font-semibold text-1xl text-[#a969b7] pt-14">
+          WHO IS
+        </h1>
+        <h1
+          class="font-family: 'Poppins', sans-serif; font-siz; font-medium md:text-3xl lg:text-4xl xl:text-4xl text-[white] pt-2">
+          Karl
+          Krummenacher</h1>
+        <p
+          class="font-family: 'Poppins', sans-serif; font-siz; font-light text-[8px] sm:text-[14px] md::text-[15px]  lg:text-[17px] xl:text-[17px] text-[white] pt-3">
+          Senior
+          Advisor,
+          Mentor & Investor</p>
+        <p
+          class="font-family: 'Poppins', sans-serif; font-siz; font-semibold  min-[300px]:text-[7px] max-[400px]:text-[7px]  text-[10px] sm:text-[6px] md:text-[7.3px] lg:text-[10px] xl:text-[10px] text-[#777777] pt-4 min-[520px]:text-[10px]  max-[640px]:text-[10px]  min-[400px]:text-[10px]  max-[520px]:text-[10px]">
+          Briefly
+          share
+          your story and background. Talk about your <br> credentials and highlight the relevant achievements to build
+          <br> your credibility. Keep the paragraph length about this long to <br> keep the layout clean and balanced.
+        </p>
+        <p
+          class="font-family: 'Poppins', sans-serif; font-siz; font-semibold  min-[300px]:text-[7px] max-[400px]:text-[7px]  text-[10px] sm:text-[6px] md:text-[7.3px] lg:text-[10px] xl:text-[10px] text-[#777777] pt-4 min-[520px]:text-[10px]  max-[640px]:text-[10px]  min-[400px]:text-[10px]  max-[520px]:text-[10px] ">
+          Briefly
+          share
+          your story and background. Talk about your <br> credentials and highlight the relevant achievements to build
+          <br> your credibility. Keep the paragraph length about this long to <br> keep the layout clean and balanced.
+        </p>
+        <div>
+          <button
+            class="bg-[#a969b7]     xl:py-2  xl:px-6    lg:py-2  lg:px-6  md:py-1  md:px-4 sm:py-1  sm:px-2  py-1 px-2  
+          text-white font-medium text-[7px]  sm:text-[7px] xl:text-[10px] lg:text-[10px]  md:text-[8px]  xl:font-bold  sm:font-medium md:font-semibold lg:font-semibold  rounded-full mt-4">
+            WORK WITH KARL
+          </button>
+        </div>
+      </div>
+      <div class=" flex justify-center  pt-[50px] ">
+        <img src="Group 20.png" alt=""
+          class="w-[400px] h-[500px] min-[300px]:w-[280px] max-[450px]:w-[280px]   sm:w-[230px] md:w-[280px] lg:w-[400px] xl:w-[400px]">
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <h1
+      class="font-family: 'Poppins', sans-serif; font-siz; font-medium text-2xl  sm:text-3xl  md:text-5xl  lg:text-5xl  xl:text-5xl text-[black] pt-[150px] text-center">
+      Trainings & Programs</h1>
+    <p
+      class="font-family: 'Poppins', sans-serif; font-siz; font-light text-[10.5px] sm:text-[13.5px] md:text-[21px]  lg:text-[21px] xl:text-[21px]  text-[#777777] pt-1 text-center">
+      Choose the right solution that suits your goals and needs.</p>
+  </div>
+  <div
+    class="max-md:flex  max-md:flex-col max-md:items-center   max-lg:flex  max-lg:flex-col max-lg:items-center max-xl:flex  max-xl:flex-col max-xl:items-center   flex justify-center gap-8 pt-12 z-50 -mb-36">
+    <div class="Adviser bg-black max-sm:w-[300px] ">
+      <h1
+        class="font-family: 'Poppins', sans-serif; font-siz; font-[600] line-height-10 text-1xl sm:text-5xl text-[white] pt-[440px] -ml-6 text-center  sm:text-center  ">
+        IMPACT ADVISORY</h1>
+      <p
+        class="font-family: 'Poppins', sans-serif; font-siz; font-extralight text-[10px] sm:text-2xl text-[#777777] pt-2 ml-16">
+        Advisory And Business Coaching</p>
+      <p
+        class="font-family: 'Poppins', sans-serif; font-siz; font-extralight sm:text-[18.8px] ml-16 text-[#BBBBBB] pt-4  min-[520px]:text-[10px]  max-[640px]:text-[10px]  min-[400px]:text-[10px]  max-[520px]:text-[10px] ">
+        A short overview description of the product, who is it <br> for and the desired benefits that your target
+        audience <br> gets when they purchase it. Please keep the text about <br> this long to keep the layout clean and
+        balanced.</p>
+      <div>
+        <button
+          class="bg-[#a969b7] font-family: 'Poppins', sans-serif; 
+  text-white font-semibold min-[300px]:py-2  max-[640px]:py-2 min-[300px]:px-7  max-[640px]:px-7   sm:py-3 sm:px-11 rounded-full mt-6 ml-16 mb-16 text-xs sm:text-sm">
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+    <div class="Group bg-black max-sm:w-[300px] ">
+      <h1
+        class="font-family: 'Poppins', sans-serif; font-siz; font-[600] line-height-10 text-1xl sm:text-5xl text-[white] pt-[440px] -ml-20 text-center  sm:text-center  ">
+        IMPACT GROUP</h1>
+      <p
+        class="font-family: 'Poppins', sans-serif; font-siz; font-extralight text-[11px] sm:text-2xl text-[#777777] pt-2 ml-16">
+        Mastermind Meets Accelerator</p>
+      <p
+        class="font-family: 'Poppins', sans-serif; font-siz; font-extralight text-[10px]  sm:text-[18.8px] ml-16 text-[#BBBBBB] pt-4  min-[520px]:text-[10px]  max-[640px]:text-[10px]  min-[400px]:text-[10px]  max-[520px]:text-[10px] ">
+        A short overview description of the product, who is it <br> for and the desired benefits that your target
+        audience <br> gets when they purchase it. Please keep the text about <br> this long to keep the layout clean and
+        balanced.</p>
+      <div>
+        <button
+          class="bg-[#a969b7] font-family: 'Poppins', sans-serif; 
+  text-white font-semibold min-[300px]:py-2  max-[640px]:py-2 min-[300px]:px-5  max-[640px]:px-5   sm:py-3 sm:px-11 rounded-full mt-6 ml-16 mb-16 text-xs sm:text-sm">
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#e0e0e0] xl:pt-9 ">
+    <h1
+      class="font-family: 'Poppins', sans-serif; font-siz; font-medium text-2xl  sm:text-3xl  md:text-5xl  lg:text-5xl  xl:text-5xl text-[black] pt-[180px] text-center">
+      Client Testimonials</h1>
+    <p
+      class="font-family: 'Poppins', sans-serif; font-siz; font-light text-[10.5px] sm:text-[13.5px] md:text-[21px]  lg:text-[21px] xl:text-[21px]  text-[#777777]  pt-1 text-center">
+      Hear
+      what some of Joe's successful clients have to say.</p>
+    <div class="  max-xl:flex max-xl:flex-col  flex justify-center    pt-10 xl:gap-3 gap-8 ">
+      <div class=" flex max-xl:flex  max-xl:justify-center max-xl:items-center">
+        <img src="Group 5 copy 2.png" alt="" class="w-[290px] h-[225px]  pt-6 -mt-4">
+      </div>
+      <div class=" flex max-xl:flex  max-xl:justify-center max-xl:items-center">
+        <div class="bg-white w-[290px] h-[260px]   sm:w-[550px] sm:h-[230px]  rounded-[30px] ">
+
+          <img src="Comma.png" alt="" class="mt-[-19px] float-right mr-[37px] h-[40px] ">
+          <p
+            class=" flex justify-center pt-12 ml-16  font-family: 'Poppins',  sans-serif; font-siz; font-light  text-[11px] sm:text-[15px] text-[#777777] ">
+            "I was able to 10x my revenue with the help of Karl in just <br> a matter of 10 months! I could hardly
+            believe
+            it. There's <br> nothing like Joe's training and coaching programs."</p>
+          <div class="flex  ml-14 sm:ml-20 gap-2 pt-4 ">
+            <div>
+              <img src="Ellipse 1 (2).png" alt="" class=" w-[80px] h-[60px] -mt-2">
+            </div>
+            <div>
+              <h1
+                class="font-family: 'Poppins', sans-serif;  font-semibold  text-[15px] sm:text-[20px] text-[#A969B7] pt-1 -mt-2 ">
+                Pat
+                Flynn</h1>
+              <p class="font-family: 'Poppins', sans-serif;  font-normal text-[8px] sm:text-[10px] text-[#777777]   ">
+                Author,
+                Entrepreneur & Podcaster</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class=" flex max-xl:flex  max-xl:justify-center max-xl:items-center">
+        <img src="Group 5 copy.png" alt="" class="w-[290px] h-[225px] pt-6 -mt-4">
+      </div>
+
+
+    </div>
+    <div class=" flex justify-center items-center pt-6">
+      <svg width="133" height="10" viewBox="0 0 133 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+          fill="#3F6B78" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M37 16C41.4183 16 45 12.4183 45 8C45 3.58172 41.4183 0 37 0C32.5817 0 29 3.58172 29 8C29 12.4183 32.5817 16 37 16Z"
+          fill="#3F6B78" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M96 16C100.418 16 104 12.4183 104 8C104 3.58172 100.418 0 96 0C91.5817 0 88 3.58172 88 8C88 12.4183 91.5817 16 96 16Z"
+          fill="#3F6B78" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M125 16C129.418 16 133 12.4183 133 8C133 3.58172 129.418 0 125 0C120.582 0 117 3.58172 117 8C117 12.4183 120.582 16 125 16Z"
+          fill="#3F6B78" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M117 7.99951C117 3.58154 120.582 0 125 0C129.418 0 132.999 3.58154 132.999 7.99951C132.999 12.4185 129.418 16.0005 125 16.0005C120.582 16.0005 117 12.4185 117 7.99951ZM87.9997 7.99951C87.9997 3.58154 91.5815 0 95.9994 0C100.417 0 103.999 3.58154 103.999 7.99951C103.999 12.4185 100.417 16.0005 95.9994 16.0005C91.5815 16.0005 87.9997 12.4185 87.9997 7.99951ZM28.9991 7.99951C28.9991 3.58154 32.5809 0 37 0C41.4179 0 44.9997 3.58154 44.9997 7.99951C44.9997 12.4185 41.4179 16.0005 37 16.0005C32.5809 16.0005 28.9991 12.4185 28.9991 7.99951ZM0 7.99951C0 3.58154 3.58173 0 7.99963 0C12.4175 0 15.9993 3.58154 15.9993 7.99951C15.9993 12.4185 12.4175 16.0005 7.99963 16.0005C3.58172 16.0005 0 12.4185 0 7.99951Z"
+          fill="#B2B2B2" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M67 16C71.4183 16 75 12.4183 75 8C75 3.58172 71.4183 0 67 0C62.5817 0 59 3.58172 59 8C59 12.4183 62.5817 16 67 16Z"
+          fill="#A969B7" />
+      </svg>
+
+    </div>
+    <div>
+      <p
+        class="font-family: 'Poppins', sans-serif;  font-normal text-[17px] sm:text-[22px] text-[#777777] flex justify-center items-center text-center pt-8 ">
+        Are you ready to take your business <br> and life to the next level?</p>
+    </div>
+    <div class="flex justify-center items-center ">
+      <button
+        class="bg-[#a969b7]     xl:py-3  xl:px-10    lg:py-3  lg:px-10  md:py-2  md:px-8 sm:py-2  sm:px-8  py-2 px-6  
+          text-white font-medium text-[7px]  sm:text-[7px] xl:text-[15px] lg:text-[12px]  md:text-[10px]  xl:font-medium  sm:font-medium md:font-semibold lg:font-semibold  rounded-full mt-4 mb-12 ">
+        WORK WITH KARL
+      </button>
+    </div>
+  </div>
+  <div class="call    ">
+    <div class="  min-[300px]:ml-[-350px] max-[400px]:ml-[-350px] max-sm:ml-[-260px]  max-md:ml-[-80px] md:ml-0 lg:ml-0 xl:ml-0   ">
+      <div
+        class="text-[#FFFFFF]  font-family: 'Poppins', sans-serif; 
+         text-2xl sm:text-2xl  md:text-3xl   lg:text-5xl  xl:text-5xl font-semibold max-md:ml-[-50px] ">
+        <h1 class=" flex justify-center whitespace-pre-line pt-32 ml-[460px] leading-12 max-md:mr-1  ">
+          Your Compelling Call <br>To Action Message <br> Goes Right Here...</h1>
+        <p></p>
+      </div>
+      <p class=" flex justify-center pt-4 ml-[370px]  font-family: 'Poppins',  sans-serif;  font-light first-letter: text-[8px]    sm:text-[8px] 
+      md:text-[8px] lg:text-[15px] xl:text-[15px] text-[#BBBBBB] leading-2  ">
+        A summary of your offer explaining the problem you <br> solve and solution you provide to your target audience.
+        <br> please keep the length about this long to keep the <br>layout clean and balanced.
+      </p>
+      <div class="flex justify-center items-center   max-md:ml-20 max-lg:ml-14">
+        <button
+          class="bg-[#a969b7]  
+       text-white font-semibold py-2 px-6  sm:py-1  sm:px-4  md:py-1  md:px-4   lg:py-3 lg:px-8  xl:py-3  xl:px-8       ml-[240px] rounded-full mt-4 mb-16 max-lg:text-[9px]   ">
+          GET STARTED TODAY
+        </button>
+      </div>
+    </div>
+  </div>
+   <div class="bg-black h-[500px]">
+    <div class=" flex justify-center pt-24 gap-2">
+      <div>
+        <img src="Group 12.png" alt=""  class=" w-[40px] sm:w-[60px] ">
+      </div>
+      <div>
+        <img src="Group 11.png" alt="" class=" w-[40px] sm:w-[60px] ">
+      </div>
+      <div>
+        <img src="Group 10.png" alt="" class=" w-[40px] sm:w-[60px] ">
+      </div>
+      <div>
+        <img src="Group 9.png" alt="" class=" w-[40px] sm:w-[60px] ">
+      </div>
+      <div>
+        <img src="Group 8.png" alt=""class=" w-[40px] sm:w-[60px] ">
+      </div>
+    </div>
+    <div class="flex items-center justify-center gap-16 pt-6">
+      <p class="  pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9px] sm:text-[15px] text-[#343434] leading-6">
+        PRIVACYPOLICY</p>
+      <p class="  pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9px] sm:text-[15px] text-[#343434] leading-6">
+        TERMSOFUSE</p>
+      <p class="  pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9px] sm:text-[15px] text-[#343434] leading-6">
+        DISCLAIMER</p>
+    </div>
+    <div class="flex items-center justify-center gap-16 ">
+      <p class=" pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9.5px] sm:text-[15px] text-[#343434] leading-6">© 2023
+        COPYRIGHT. KARL KRUMMENACHER, LLC. ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="flex items-center justify-center gap-16 pt-10 ">
+      <svg width="75" height="64" mb-64 viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M47.7904 1e-05L47.6116 0.25712L22.892 35.8575L47.9603 72.8716L48.0248 72.9673L48.0471 73L74.9996 72.8716L55.5634 45.0935L48.5612 35.0863L55.5634 25.2188L73.4595 0L47.7904 1e-05Z"
+          fill="#315864" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 0.256836V72.8713H36.8731L11.8049 35.8572L36.5245 0.256836L0 0.256836Z" fill="#315864" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M48.025 72.9673L47.9605 72.8721L22.8925 35.8589L47.6121 0.2583L47.7912 0H73.4591L55.5645 25.2197L48.5604 35.0864L55.5645 45.0947L74.9993 72.8721L48.0476 73.0015L48.025 72.9673ZM0 72.8721V0.25829H36.5247L11.805 35.8589L36.8731 72.8721H0Z"
+          fill="#343434" />
+      </svg>
+
+    </div>
+  </div>   
+</body>
+
+</html>
